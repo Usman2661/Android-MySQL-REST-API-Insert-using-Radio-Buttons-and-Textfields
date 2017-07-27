@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="com.example.usmanali.samplemarker.MainActivity">
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you safe in this event?"
+        android:textSize="30sp"
+        android:layout_alignBottom="@+id/radioGroup"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="85dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="testview"
+        android:textSize="30sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:weightSum="1"
+        android:id="@+id/radioGroup"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="18dp">
+
+        <RadioButton
+            android:id="@+id/yesRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.14"
+            android:checked="false"
+            android:text="Yes"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/noRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.13"
+            android:checked="false"
+            android:text="No"
+            android:textSize="25dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:layout_alignEnd="@+id/radioGroup"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
